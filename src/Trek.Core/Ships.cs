@@ -1,54 +1,68 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace Trek.Models
+namespace Trekish.Models
 {
-    public class ShieldClass
+    public interface IShipClass : IEquipmentClass
     {
-        /// <summary>
-        /// different shield classes are better at absorbing damage from different weapon types
-        /// </summary>
-        public Dictionary<WeaponClass, Rate> DamageAbsorbtionRate { get; set; }
-        
-        /// <summary>
-        /// rate of energy disipation, or demand on the ship's batteries, during engagement with a particular weapon type 
-        /// </summary>
-        public Dictionary<WeaponClass, Rate> EnergyDemand { get; set; }
+        IEngineClass ImpulseEngineClass { get; }
+        IEngineClass WarpEngineClass { get; }
+        Metric Mass { get; }
+        EnergyWeaponClass[] WeaponSystems { get; }
     }
 
-    public enum EngineTypes
+    public class ShipClass : IShipClass
     {
-        Impulse = 0,
-        Warp = 1
-    }
+        public ShipClass(double efficiency, int techLevel, string name, Metric mass, IEngineClass impulseEngineClass, IEngineClass warpEngineClass, EnergyWeaponClass[] weaponSystems)
+        {
+            Efficiency = efficiency;
+            TechLevel = techLevel;
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+            Mass = mass ?? throw new ArgumentNullException(nameof(mass));
+            ImpulseEngineClass = impulseEngineClass ?? throw new ArgumentNullException(nameof(impulseEngineClass));
+            WarpEngineClass = warpEngineClass ?? throw new ArgumentNullException(nameof(warpEngineClass));
+            WeaponSystems = weaponSystems ?? throw new ArgumentNullException(nameof(weaponSystems));
+        }
 
-    public class Engine
-    {
-        /// <summary>
-        /// 1.0 would mean zero energy drain when engine is engaged
-        /// </summary>
-        public double Efficiency { get; set; }
-        public EngineTypes Type { get; set; }
-    }
+        public double Efficiency { get; }
+        public int TechLevel { get; }
+        public string Name { get; }
 
-    public class ShipClass
-    {
-        public string Name { get; set; }
-
-        public double MaxEnergy { get; set; }
-        public Velocity MaxWarp { get; set; }
-        public Velocity MaxImpluse { get; set; }
-        public double Mass { get; set; }
-
-        public EnergyWeaponClass[] WeaponArray { get; }
-
-        public Dictionary<EngineTypes, Engine> Engines { get; }
+        public Metric Mass { get; }
+        public IEngineClass ImpulseEngineClass { get; }
+        public IEngineClass WarpEngineClass { get; }
+        public EnergyWeaponClass[] WeaponSystems { get; }
     }
 
     public class Ship
     {
-        public ShipClass Class { get; set; }
-        public string RegistrationNumber { get; set; }
+        public Ship(string registration, string name, IShipClass shipClass, Engine[] impulseEngines, Engine[] warpEngines)
+        {
+            Registration = registration ?? throw new ArgumentNullException(nameof(registration));
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+            Class = shipClass ?? throw new ArgumentNullException(nameof(shipClass));
+            ImpulseEngines = impulseEngines ?? throw new ArgumentNullException(nameof(impulseEngines));
+            WarpEngines = warpEngines ?? throw new ArgumentNullException(nameof(warpEngines));
+        }
+
+        public IShipClass Class { get; set; }
+
+        public string Registration { get; set; }
         public string Name { get; set; }
+
+        private Engine[] ImpulseEngines { get; }
+        private Engine[] WarpEngines { get; }
+
+        public ILocation Location { get; set; }
+
+        //todo: add weapons
+
+        private bool Move(ILocation location, SpeedFactor speedFactor)
+        {
+            // use location to get distance of move
+            var distance = new Distance(1, DistanceUnits.Kilometer);
+            var energy = Physics.CalculateEnergyCost(speedFactor.KilometerPerSecond, Class.Mass, distance);
+            // automatically chose warp or impulse and drain fuel appropriately
+            return false;
+        }
     }
 }
