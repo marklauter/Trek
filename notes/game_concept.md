@@ -9,9 +9,9 @@ A game based on a popular text based Star Trek game from the 1970's.
                 \_ \    \----._________.----/           Vs             ========______.------/____'---------[__
                   \ \   /  /    `-_-'                                   (    _,--------------\_`---.___________`--,
               __,--`.`-'..'-_                                            `--'                 `---------/  ______/
-             /____          ||                                                                        __/__/_____/_____
+             /____          ||                                                                       __/__/_____/_____
                   `--.____,-'                                                                       />- [      ]  |===\
-                                                                                                   `-----------------'
+                                                                                                    `-----------------'
 
 0. Development approach is to build something crappy every day, let the brain work overnight, build something less crappy tomorrow. This way new ideas emerge naturally.
 1. Play as Federation zeros or Klingon heroes.
