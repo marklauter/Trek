@@ -13,6 +13,7 @@ A game based on a popular text based Star Trek game from the 1970's.
 				  `--.____,-'                    					                               />- [      ]  |===\
 																								   `-----------------'
 
+0. Development approach is to build something crappy every day, let the brain work overnight, build something less crappy tomorrow. This way new ideas emerge naturally.
 1. Play as Federation zeros or Klingon heroes.
 2. Player's side believes the NPC opponents are encroaching on player's side territory.
 2.1 The primary goal of the game is to stop the enemy incursions and to expand the player's own territory.
