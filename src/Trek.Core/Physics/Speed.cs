@@ -27,9 +27,29 @@
             return new Speed(value);
         }
 
-        public static explicit operator double(Speed rate)
+        public static explicit operator double(Speed speed)
         {
-            return rate.Value;
+            return speed.Value;
         }
+
+        //public static Speed operator /(Speed speed, double value)
+        //{
+        //    return new Speed(speed.Value / value, speed.Units);
+        //}
+
+        //public static Speed operator *(Speed speed, double value)
+        //{
+        //    return new Speed(speed.Value * value, speed.Units);
+        //}
+
+        //public static Speed operator -(Speed speed, double value)
+        //{
+        //    return new Speed(speed.Value - value, speed.Units);
+        //}
+
+        //public static Speed operator +(Speed metric, double value)
+        //{
+        //    return new Speed(metric.Value + value, metric.Units);
+        //}
     }
 }

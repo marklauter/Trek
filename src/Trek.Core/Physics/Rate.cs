@@ -10,8 +10,6 @@ namespace Trekish.Models.Physics
         Minute,
         Hour,
         Day,
-        Week,
-        Month,
         Turn
     }
 

@@ -39,25 +39,25 @@ namespace Trekish.Models.Physics
             return metric.Value;
         }
 
-        public static Metric<T> operator /(Metric<T> metric, double value)
-        {
-            return new Metric<T>(metric.Value / value, metric.Units);
-        }
+        //public static Metric<T> operator /(Metric<T> metric, double value)
+        //{
+        //    return new Metric<T>(metric.Value / value, metric.Units);
+        //}
 
-        public static Metric<T> operator *(Metric<T> metric, double value)
-        {
-            return new Metric<T>(metric.Value * value, metric.Units);
-        }
+        //public static Metric<T> operator *(Metric<T> metric, double value)
+        //{
+        //    return new Metric<T>(metric.Value * value, metric.Units);
+        //}
 
-        public static Metric<T> operator -(Metric<T> metric, double value)
-        {
-            return new Metric<T>(metric.Value - value, metric.Units);
-        }
+        //public static Metric<T> operator -(Metric<T> metric, double value)
+        //{
+        //    return new Metric<T>(metric.Value - value, metric.Units);
+        //}
 
-        public static Metric<T> operator +(Metric<T> metric, double value)
-        {
-            return new Metric<T>(metric.Value + value, metric.Units);
-        }
+        //public static Metric<T> operator +(Metric<T> metric, double value)
+        //{
+        //    return new Metric<T>(metric.Value + value, metric.Units);
+        //}
         #endregion
     }
 }

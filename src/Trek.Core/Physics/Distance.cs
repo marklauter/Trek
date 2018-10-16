@@ -3,6 +3,7 @@
     public enum DistanceUnits
     {
         Undefined,
+        Meter,
         Kilometer
     }
 

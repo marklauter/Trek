@@ -1,19 +1,15 @@
-﻿using System;
-
-namespace Trekish.Models.Physics
+﻿namespace Trekish.Models.Physics
 {
     public static class Constants
     {
         /// <summary>
         /// 300,000 km/s
         /// </summary>
-        public static readonly Speed SpeedOfLight = new Speed(TimeSpan.FromSeconds(1), 300000,  DistanceUnits.Kilometer);
+        public static readonly Speed SpeedOfLightKmps = new Speed(300000, DistanceUnits.Kilometer, TimeUnits.Second);
 
         /// <summary>
         /// max impulse is 1/2 speed of light
         /// </summary>
-        public static readonly double MaxImpulse = SpeedOfLight / 2.0;
-
-        //public static readonly
+        public static readonly Speed MaxImpulse = new Speed(SpeedOfLightKmps.Value / 2, DistanceUnits.Kilometer, TimeUnits.Turn);
     }
 }
