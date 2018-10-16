@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A10E4164-6D2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{39488144-3BF7-46B3-B1D2-38EC43EC7A5C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trekish.Core.Test", "test\Trek.Core.Test\Trekish.Core.Test.csproj", "{1ABA8821-7BA8-4D19-86E0-C754D7EC4A28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trekish.Models.Test", "test\Trek.Core.Test\Trekish.Models.Test.csproj", "{1ABA8821-7BA8-4D19-86E0-C754D7EC4A28}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{F34664EC-61AB-4EB1-BBE8-9D8D141BAB83}"
 	ProjectSection(SolutionItems) = preProject
