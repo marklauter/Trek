@@ -1,10 +1,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace Trekish.Models.Test
 {
     [TestClass]
     public class ModelTests
     {
+
         [TestMethod]
         public void Galaxy_Ctor()
         {
