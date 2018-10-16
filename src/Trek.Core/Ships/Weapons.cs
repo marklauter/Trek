@@ -44,7 +44,6 @@ namespace Trekish.Models
     /// </summary>    
     public interface IWeaponClass : IEquipmentClass
     {
-        string Name { get; set; }
         Rate DamageOutput { get; set; }
         Rate RechargeRate { get; set; }
         Metric MaxRange { get; set; }

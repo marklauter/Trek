@@ -1,4 +1,5 @@
 ﻿using System;
+using Trekish.Models.Physics;
 
 namespace Trekish.Models
 {
@@ -6,13 +7,13 @@ namespace Trekish.Models
     {
         IEngineClass ImpulseEngineClass { get; }
         IEngineClass WarpEngineClass { get; }
-        Metric Mass { get; }
+        Mass Mass { get; }
         EnergyWeaponClass[] WeaponSystems { get; }
     }
 
     public class ShipClass : IShipClass
     {
-        public ShipClass(double efficiency, int techLevel, string name, Metric mass, IEngineClass impulseEngineClass, IEngineClass warpEngineClass, EnergyWeaponClass[] weaponSystems)
+        public ShipClass(double efficiency, int techLevel, string name, Mass mass, IEngineClass impulseEngineClass, IEngineClass warpEngineClass, EnergyWeaponClass[] weaponSystems)
         {
             Efficiency = efficiency;
             TechLevel = techLevel;
@@ -56,12 +57,29 @@ namespace Trekish.Models
 
         //todo: add weapons
 
-        private bool Move(ILocation location, SpeedFactor speedFactor)
+        /// <summary>
+        /// impulse to new location in sector
+        /// speed is calculated by distance. there's a max speed and therefor a max distance
+        /// </summary>
+        /// <param name="location"></param>
+        /// <returns></returns>
+        private bool Move(ILocation location)
         {
             // use location to get distance of move
-            var distance = new Distance(1, DistanceUnits.Kilometer);
-            var energy = Physics.CalculateEnergyCost(speedFactor.KilometerPerSecond, Class.Mass, distance);
+            //var distance = new Distance(1, DistanceUnits.Kilometer);
+            //var energy = Physics.CalculateEnergyCost(speedFactor.KilometerPerSecond, Class.Mass, distance);
             // automatically chose warp or impulse and drain fuel appropriately
+            return false;
+        }
+
+        /// <summary>
+        /// warp to another sector
+        /// speed is calculated by distance. there's a max speed and therefor a max distance.
+        /// </summary>
+        /// <param name="sector"></param>
+        /// <returns></returns>
+        private bool Move(Sector sector)
+        {
             return false;
         }
     }

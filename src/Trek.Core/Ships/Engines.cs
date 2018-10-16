@@ -1,4 +1,5 @@
 ﻿using System;
+using Trekish.Models.Physics;
 
 namespace Trekish.Models
 {
@@ -25,7 +26,7 @@ namespace Trekish.Models
         EngineTypes Type { get; }
         FuelTypes Fuel { get; }
         IFuelSystemClass FuelSystemClass { get; }
-        SpeedFactor MaximumPowerFactor { get; }
+        //SpeedFactor MaximumPowerFactor { get; }
     }
 
     public class EngineClass : IEngineClass
