@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Trekish.Models.Physics
 {
@@ -18,7 +19,7 @@ namespace Trekish.Models.Physics
     ///   and a movement trun == 1 second, 
     ///   then a ship can travel 3 full sector blocks per turn
     /// </summary>
-    public class Position : IPosition
+    public class Position : IPosition, IEquatable<Position>
     {
         public Position() { }
         public Position(double x, double y)
@@ -38,5 +39,37 @@ namespace Trekish.Models.Physics
             var sum = Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2);
             return new Distance(Math.Sqrt(sum), DistanceUnits.Kilometer);
         }
+        
+        #region IEquatable
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as Position);
+        }
+
+        public bool Equals(Position other)
+        {
+            return other != null &&
+                   X == other.X &&
+                   Y == other.Y;
+        }
+
+        public override int GetHashCode()
+        {
+            var hashCode = 1861411795;
+            hashCode = hashCode * -1521134295 + X.GetHashCode();
+            hashCode = hashCode * -1521134295 + Y.GetHashCode();
+            return hashCode;
+        }
+
+        public static bool operator ==(Position position1, Position position2)
+        {
+            return EqualityComparer<Position>.Default.Equals(position1, position2);
+        }
+
+        public static bool operator !=(Position position1, Position position2)
+        {
+            return !(position1 == position2);
+        }
+        #endregion
     }
 }

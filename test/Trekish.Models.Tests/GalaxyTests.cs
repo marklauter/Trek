@@ -4,7 +4,7 @@ using System;
 namespace Trekish.Models.Test
 {
     [TestClass]
-    public class ModelTests
+    public class GalaxyTests
     {
 
         [TestMethod]
@@ -29,12 +29,6 @@ namespace Trekish.Models.Test
                     }
                 }
             }
-        }
-
-        [TestMethod]
-        public void Engines()
-        {
-
         }
     }
 }

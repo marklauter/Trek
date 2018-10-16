@@ -1,15 +1,5 @@
-﻿namespace Trekish.Models
+﻿namespace Trekish.Models.Ships
 {
-    public interface IEquipmentClass
-    {
-        /// <summary>
-        /// 1.0 is perfect efficiency which means there are no 
-        /// </summary>
-        double Efficiency { get; }
-        int TechLevel { get; }
-        string Name { get; }
-    }
-
     public interface IStorageSystem
     {
         double MaxCapacity { get; }
@@ -42,7 +32,7 @@
 
         public bool Deposit(double value)
         {
-            if(Balance + value <= MaxCapacity)
+            if (Balance + value <= MaxCapacity)
             {
                 Balance += value;
                 return true;

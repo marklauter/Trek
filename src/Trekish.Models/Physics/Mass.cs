@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Trekish.Models.Physics
+﻿namespace Trekish.Models.Physics
 {
     public enum MassUnits
     {
         Undefined,
         Grams,
         Kilograms,
+        Tonne
     }
 
     public class Mass : Metric<MassUnits>

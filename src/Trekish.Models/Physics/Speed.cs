@@ -14,6 +14,14 @@
         {
         }
 
+        public Speed(Distance distance) : base(distance.Value, distance.Units)
+        {
+        }
+
+        public Speed(Distance distance, TimeUnits timeUnits) : base(distance.Value, distance.Units, timeUnits)
+        {
+        }
+
         public Speed(double value, TimeUnits timeUnits) : base(value, timeUnits)
         {
         }
