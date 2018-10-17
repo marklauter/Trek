@@ -1,20 +1,34 @@
-Game Model
-==========
-Idea is to record the rules of the game. Rules, actions, mechanics, rewards, etc.
+# Game Model
 
-Physics
--------
+Idea is to record the rules of the game here. Rules, actions, mechanics, rewards, etc. It's just a brain dump.
+
+## Physics
+
 As much as possible I want to create "real" physics. This means equations for acceleration, force, energy, and others, will be based on real physics. 
 However, the units of time will be restricted to Turn and Star Day. Early prototyping shows that realistic depictions of energy for star ships is problematic. 
 No one wants to be dealing in scientific notation for things like kilometers, joules, watts, etc. So as much as possible we'll use units from Star Trek, such as Cochrane for warp field displacement'
 
+With consistent physics it should be possible to balance the game by tweaking equipment parameters instead of formulas.
+
 ### Energy/Power
+
+1. Movement, scanning, weapons, shields, cloaking and other equipment and activities require power. 
+
+2. If possible I'd like to use real world units.
 
 Joule is energy intensity. (energy required to move 1kg thing 1 meter.) Measures instantaneous energy.
 Watt is energy intensity over time, aka power. (Joule/s) Measures instantaneous power.
 Watt Hours is power over time. (Joule/s/h). Measures power over time.
 
 ### Speed
+
+1. In the real world, like flying an airplane, you would set a course and power setting, the power setting would determine the speed which in turn would determine the time from the point of origin to the destination. 
+
+2. The power setting would determine how much fuel was being used.
+
+3. In a turn based game, this seems problamatic. For one thing, asking the player to pick a course on a grid or hex board would be tricky. 
+
+4. idea (based on Star Fleet Battles): https://en.wikipedia.org/wiki/Impulse-based_turn_system
 
 Speed of light is 299,792,458 meters per second
 Speed of light is ~ 300,000 km/s

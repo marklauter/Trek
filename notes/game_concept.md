@@ -1,17 +1,22 @@
-Trekish
-=======
-A game based on a popular text based Star Trek game from the 1970's.
---------------------------------------------------------------------
+# Trekish
+
+## A game based on a popular text based Star Trek game from the 1970's.
 
     "Today is a good day to die, if you're an enemy of the Empire."
-    ___________________          _-_                                      _                        _.-------,
+    ___________________          _-_                                       _                        _.-------,
     \==============_=_/ ____.---'---`---.____                            .-.|                 _____/  \[_____|
-                \_ \    \----._________.----/           Vs             ========______.------/____'---------[__
+                 \_\    \----._________.----/           Vs              ========______.------/____'---------[__
                   \ \   /  /    `-_-'                                   (    _,--------------\_`---.___________`--,
               __,--`.`-'..'-_                                            `--'                 `---------/  ______/
              /____          ||                                                                       __/__/_____/_____
                   `--.____,-'                                                                       />- [      ]  |===\
                                                                                                     `-----------------'
+## Genesis
+
+I grew up watching Star Trek in the 1970's. Probably my first contact with a computer was a version of the original Star Trek game played over a modem.
+The computer to which I had access was actually just a paper=based terminal. No idea where I was in 4th grade and it was around 1977 or '79.
+
+## Brain Dump
 
 0. Development approach is to build something crappy every day, let the brain work overnight, build something less crappy tomorrow. This way new ideas emerge naturally.
 1. Play as Federation zeros or Klingon heroes.
