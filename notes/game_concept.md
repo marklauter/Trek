@@ -14,7 +14,14 @@
 ## Genesis
 
 I grew up watching Star Trek in the 1970's. Probably my first contact with a computer was a version of the original Star Trek game played over a modem.
-The computer to which I had access was actually just a paper=based terminal. No idea where I was in 4th grade and it was around 1977 or '79.
+The computer to which I had access was actually just a paper=based terminal. No idea where the actual computer was. I was in 4th grade and it was around 1977 or '79.
+
+Later I played Start Fleet Battles, a hex-board, turn-based battle sim based on Jutland. It was fun to design my own ships and play against friends.
+
+This project started out as a rehash of the original 1972 game, but I've had these ideas from Star Fleet Battles rattling around in my head, so it's evolving into more.
+
+## Name Ideas
+1. Trekkin' the Universe
 
 ## Brain Dump
 
