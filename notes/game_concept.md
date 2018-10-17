@@ -47,5 +47,10 @@ This project started out as a rehash of the original 1972 game, but I've had the
 15. Inner-sector travel requires impulse.
 16. If the ship's impulse or warp drive is damaged, that mode of travel is unavailable.
 17. Crew can train up on various skills. Maybe just bridge crew. Like world of tanks?
+18. MDA - https://en.wikipedia.org/wiki/MDA_framework
+19. Game Mechanics primer: https://en.wikipedia.org/wiki/Game_mechanics
+20. Game Mechanics and other design reading: http://www.lostgarden.com/2006/10/what-are-game-mechanics.html
+
+
 
 

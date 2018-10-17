@@ -4,7 +4,7 @@ Idea is to record the rules of the game here. Rules, actions, mechanics, rewards
 
 ## Help System
 
-Help system should be called Ships Computer or Data Banks or something goofy like that.
+Help system should be called Ship's Computer or Data Banks or something goofy like that.
 
 ## Physics
 
@@ -49,8 +49,12 @@ Astronomical Unit: Au == 150 million km == ~ 8 minutes at warp 1
 
 ### Time
 
-Game time is measured in turns and days. 
+Game time is measured in impluses, turns, and days. 
+Information on impluse style turns: https://en.wikipedia.org/wiki/Impulse-based_turn_system
 24 turns per day. So a turn is 60 minutes and should help giving realistic movement and action limitations in game.
+In SFB there were 32 impulses per turn. If we go with 30 impulses, each impulse would represent 2 minutes of real time.
+
+Player actions must implement Simultaneous Action Selection: https://en.wikipedia.org/wiki/Simultaneous_action_selection
 
 ## Ships
 

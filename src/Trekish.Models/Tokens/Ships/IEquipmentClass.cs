@@ -15,11 +15,21 @@
     {
         public EquipmentClass() { }
 
-        public EquipmentClass(int techLevel, double efficiency, string name, string description)
+        public EquipmentClass(int techLevel, double efficiency)
         {
             TechLevel = techLevel;
             Efficiency = efficiency;
+        }
+
+        public EquipmentClass(int techLevel, double efficiency, string name) 
+            : this(techLevel, efficiency)
+        {
             Name = name;
+        }
+
+        public EquipmentClass(int techLevel, double efficiency, string name, string description) 
+            : this(techLevel, efficiency, name)
+        {
             Description = description;
         }
 
