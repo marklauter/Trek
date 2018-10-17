@@ -2,6 +2,10 @@
 
 Idea is to record the rules of the game here. Rules, actions, mechanics, rewards, etc. It's just a brain dump.
 
+## Help System
+
+Help system should be called Ships Computer or Data Banks or something goofy like that.
+
 ## Physics
 
 As much as possible I want to create "real" physics. This means equations for acceleration, force, energy, and others, will be based on real physics. 
@@ -48,8 +52,7 @@ Astronomical Unit: Au == 150 million km == ~ 8 minutes at warp 1
 Game time is measured in turns and days. 
 24 turns per day. So a turn is 60 minutes and should help giving realistic movement and action limitations in game.
 
-Ships
------
+## Ships
 
 ### Crew
 
