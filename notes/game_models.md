@@ -58,11 +58,36 @@ Player actions must implement Simultaneous Action Selection: https://en.wikipedi
 
 ## Ships
 
+### Equipment
+
+1. Transporters (for boarding enemy ships)
+2. Engines (warp, impulse)
+3. Fuel Systems, Batteries, Energy Systems
+4. Weapons Systems
+5. Shields
+
+### Weapons
+
 ### Crew
 
 Crew can be trained up on various ratings. This would work just like world of tanks. Just need to identify crew members, what types of ratings are appropriate, how long it takes for a rating to improve.
 
-### Detecting and being detected
+Space Marines can board enemy ships. Capturing enemy ships is better than blowing them up. 
+
+Klingons, Romulans and Orians get economic boost from enslaving captured enemy crew, but this increases enemy aggression. 
+Alternatively, captured crew can be spaced, but this will result in enhanced enemy defense stats against boarding parties, and reduced willingness to surender when ship is totally disabled, possibly resulting in self-destruct. 
+This is because enemy crew are more willing to fight to the death if they're just going to be spaced when captured anyway.
+Economic boost manifests itself in reduced cost for... uh.. some in-game stuff. Or maybe increased reward points for in-game acheivements. 
+Probably something like a commission for the number of enslaved enemy crew members.
+
+Federation captains get an economic penalty for capturing enemy crew because they must be housed in cushy Federation POW camps, 
+but this reduces enemy aggression. Alternatively, Federation captains can space their enemy captives, but this will result in enhanced enemy defense stats against boarding parties, and reduced willingness to surender when ship is totally disabled, possibly resulting in self-destruct. 
+This is because enemy crew are more willing to fight to the death if they're just going to be spaced when captured anyway.
+Economic penalty might work like an anti-commission for each enemy captured.
+
+The risk-reward for different races is offest or complimented by the reward of capturing enemy ships in-tact. Technology upgrades, materials for repairs, etc.
+
+### Detecting and Being Detected
 
 Similar to World of Tanks (3 rings of visibility) or the old hex-style Panzer board games, certain ships are more stealthy and certain ships have better sensing equipment. On any given turn
 it makes sense to roll for detection. 
